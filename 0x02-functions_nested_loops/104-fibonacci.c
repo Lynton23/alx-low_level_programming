@@ -7,22 +7,17 @@
  */
 int main(void)
 {
-long int prev = 1;
-long int current = 2;
-long int next;
 int count;
+unsigned long int prev = 1;
+unsigned long int current = 2;
+unsigned long int next;
 
-printf("1, 2");
+printf("%lu, %lu", prev, current);
 
 for (count = 3; count <= 98; count++)
 {
 next = prev + current;
-if (next < 10)
-printf(",   %ld", next);
-else if (next < 100)
-printf(",  %ld", next);
-else
-printf(", %ld", next);
+printf(", %lu", next);
 prev = current;
 current = next;
 }
