@@ -17,6 +17,11 @@ printf("1, 2");
 for (count = 3; count <= 98; count++)
 {
 next = prev + current;
+if (next < 10)
+printf(",   %ld", next);
+else if (next < 100)
+printf(",  %ld", next);
+else
 printf(", %ld", next);
 prev = current;
 current = next;
