@@ -7,7 +7,7 @@
  * then calls the `positive_or_negative` function.
  * Return: 0 (Success)
  */
-main(void)
+int  main(void)
 {
 int i;
 i = 0;
