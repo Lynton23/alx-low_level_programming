@@ -7,7 +7,8 @@
 void print_rev(char *s)
 {
 int length = 0;
-
+/* Declare the loop variable */
+int i;
 /* Calculate the length of the string*/
 while (s[length] != '\0')
 {
@@ -15,7 +16,7 @@ length++;
 }
 
 /* Print the string in reverse order*/
-for (int i = length - 1; i >= 0; i--)
+for (i = length - 1; i >= 0; i--)
 {
 _putchar(s[i]);
 }
