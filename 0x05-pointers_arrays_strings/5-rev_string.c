@@ -16,7 +16,7 @@ while (s[length] != '\0')
 length++;
 }
 
-/* Reverse the string using two pointers*/
+/* reverse the string using two pointers*/
 while (start < length - 1)
 {
 temp = s[start];
