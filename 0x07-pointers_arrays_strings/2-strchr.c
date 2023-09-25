@@ -21,5 +21,5 @@ s++;
 if (*s == c)
 return (s);
 
-return (char *)(NULL); /* Proper typecasting to char pointer*/
+return ((char *)NULL); /* Proper typecasting to char pointer*/
 }
