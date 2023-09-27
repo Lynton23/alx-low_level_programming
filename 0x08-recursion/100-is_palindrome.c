@@ -10,11 +10,21 @@ int helper(char *s, int start, int end);
  */
 int is_palindrome(char *s)
 {
-int length = 0;
-
-while (s[length] != '\0')
-length++;
+int length = _strlen_recursion(s);
 return (helper(s, 0, length - 1));
+}
+
+/**
+ * _strlen_recursion - returns the length of a string
+ * @s: string to check
+ *
+ * Return: length of s
+ */
+int _strlen_recursion(char *s)
+{
+if (*s == '\0')
+return (0);
+return (1 + _strlen_recursion(s + 1));
 }
 
 /**
