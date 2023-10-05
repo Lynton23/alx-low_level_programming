@@ -17,6 +17,7 @@ str++;
 }
 return (1);
 }
+
 /**
  * main - Entry point of the program.
  * @argc: The number of command-line arguments.
@@ -36,7 +37,7 @@ return (98);
 
 num1 = strtoul(argv[1], NULL, 10);
 num2 = strtoul(argv[2], NULL, 10);
-result = num1 *num2;
+result = num1 * num2;
 
 printf("%lu\n", result);
 
