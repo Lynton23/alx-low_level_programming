@@ -14,6 +14,6 @@
 /* Define the print_name function */
 void print_name(char *name, name_printer_t printer)
 {
-    /* Implementation of the print_name function */
+/* Implementation of the print_name function */
 printer(name);
 }
