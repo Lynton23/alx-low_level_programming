@@ -7,4 +7,5 @@ typedef void (*name_printer_t)(char *);
 /* Function prototypes */
 void print_name(char *name, name_printer_t printer);
 void array_iterator(int *array, size_t size, void (*action)(int));
+int int_index(int *array, int size, int (*cmp)(int));
 #endif /* FUNCTION_POINTERS_H */
