@@ -6,7 +6,7 @@
  * @argv: An array of argument strings.
  *
  * Return: 0 for success,
- * 98 for incorrect number of arguments
+ *98 for incorrect number of arguments
  *99 for invalid operator, 100 for division by zero.
  */
 int main(int argc, char *argv[])
@@ -22,8 +22,7 @@ return (98);
 
 a = atoi(argv[1]);
 b = atoi(argv[3]);
-op_func=get_op_func(argv[2]);
-
+op_func = get_op_func(argv[2]);
 if (!op_func)
 {
 printf("Error\n");
