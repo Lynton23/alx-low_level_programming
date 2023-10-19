@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
- * pre_main - This function is executed before the main function.
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-void __attribute__ ((constructor)) pre_main(void)
+int main(void)
 {
-printf("You're beat! and yet, you must allow, "
-	"I bore my house upon my back!\n");
-
+printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
+return (0);
 }
+
